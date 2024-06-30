@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CHB</title>
+</head>
+
+<body>
+    <header>
+        <h2>MENU</h2>
+    </header>
+
+    <main>
+        <section id="jeden">
+            <div id="tabelki">
+                <!-- PODSUMOWANIE TYDZIEN -->
+                <table>
+                    <tr>
+                        <th colspan="3">TYDZIEŃ</th>
+                    </tr>
+        
+                    <tr>
+                        <td>płatne</td>
+                        <td>darmowe</td>
+                        <td>weekend</td>
+                    </tr>
+        
+                    <tr>
+                        <td id="tp">111</td>
+                        <td id="td">222</td>
+                        <td id="tw">333</td>
+                    </tr>
+        
+                    <tr>
+                        <th colspan="3">ZAROBEK EURO TYDZIEŃ</th>
+                    </tr>
+        
+                    <tr>
+                        <td id="ptp">e11</td>
+                        <td id="ptd">e22</td>
+                        <td id="ptw">e33</td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="3" id="lt">e9999</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2" rowspan="2">STS</td>
+                        <td id="stsProcent">120zł</td>
+                    </tr>
+        
+                    <tr>
+                        <td>.</td>
+                    </tr>
+                </table>
+    
+                <!-- PODSUMOWANIE DZIEN -->
+                <table>
+                    <tr>
+                        <th colspan="3">DZISIAJ</th>
+                    </tr>
+        
+                    <tr>
+                        <td>płatne</td>
+                        <td>darmowe</td>
+                        <td>weekend</td>
+                    </tr>
+        
+                    <tr>
+                        <td id="dp">444</td>
+                        <td id="dd">555</td>
+                        <td id="dw">666</td>
+                    </tr>
+        
+                    <tr>
+                        <th colspan="3">ZAROBEK EURO DZISIAJ</th>
+                    </tr>
+        
+                    <tr>
+                        <td id="pdp">e44</td>
+                        <td id="pdd">e55</td>
+                        <td id="pdw">e66</td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="3" id="ld">e8888</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2"></td>
+                        <th>RAZEM EURO</th>
+                        <td id="razemEuro">e50</td>
+                    </tr>
+        
+                    <tr>
+                        <th>RAZEM ZŁOTY</th>
+                        <td id="razemZloty">200zł</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="jedenInfo">
+                <div id="stawki">
+                    <table>
+                        <tr>
+                            <td id="prog1"></td>
+                            <td id="prog2"></td>
+                            <td id="prog3"></td>
+                        </tr>
+                        <tr>
+                            <td id="weekendowe"></td>
+                            <td id="darmowe"></td>
+                            <td id="stawka1"></td>
+                        </tr>
+                        <tr>
+                            <td id="stawka2"></td>
+                            <td id="stawka3"></td>
+                            <td id="stawka4"></td>
+                        </tr>
+                        <tr>
+                            <td id="brakProg1"></td>
+                            <td id="brakProg2"></td>
+                            <td id="brakProg3"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="dwa">
+            <div id="statTygodnioweWiadomosci">
+                <table class="scrolldown">
+                    <tr>
+                        <th rowspan="2">#</th>
+                        <th colspan="14">DNI TYGODNIA</th>
+                        <th colspan="2">RAZEM</th>
+                    </tr>
+
+                    <tr>
+                        <td>Poniedziałek</td>
+                        <td id="plusMinus">+-=</td>
+                        <td>Wtorek</td>
+                        <td id="plusMinus2">+-=</td>
+                        <td>Środa</td>
+                        <td id="plusMinus3">+-=</td>
+                        <td>Czwartek</td>
+                        <td id="plusMinus4">+-=</td>
+                        <td>Piątek</td>
+                        <td id="plusMinus5">+-=</td>
+                        <td>Sobota</td>
+                        <td id="plusMinus6">+-=</td>
+                        <td>Niedziela</td>
+                        <td id="plusMinus7">+-=</td>
+                        <td>suma</td>
+                        <td>średnia</td>
+                    </tr>
+                    <!-- tydzien 1 -->
+                    <tr>
+                        <td id="data1">00/00/ - 00/00</td>
+                        <td id="poniedzialek1">100</td>
+                        <td></td>
+                        <td id="wtorek1">100</td>
+                        <td></td>
+                        <td id="sroda1">100</td>
+                        <td></td>
+                        <td id="czwartek1">100</td>
+                        <td></td>
+                        <td id="piatek1">100</td>
+                        <td></td>
+                        <td id="sobota1">100</td>
+                        <td></td>
+                        <td id="niedziela1">100</td>
+                        <td></td>
+                        <td id="sumaTydzien1">1749</td>
+                        <td id="sredniaTydzien1">547</td>
+                    </tr>
+                    <!-- tydzien 2 -->
+                    <tr>
+                        <td id="data2">00/00/ - 00/00</td>
+                        <td id="poniedzialek2">100</td>
+                        <td id="t1pn">+</td>
+                        <td id="wtorek2">100</td>
+                        <td id="t1wt">+</td>
+                        <td id="sroda2">100</td>
+                        <td id="t1sr">+</td>
+                        <td id="czwartek2">100</td>
+                        <td id="t1cz">+</td>
+                        <td id="piatek2">100</td>
+                        <td id="t1pt">+</td>
+                        <td id="sobota2">100</td>
+                        <td id="t1sb">+</td>
+                        <td id="niedziela2">100</td>
+                        <td id="t1nd">+</td>
+                        <td id="sumaTydzien2"></td>
+                        <td id="sredniaTydzien2"></td>
+                    </tr>
+                    <!-- tydzien 3 -->
+                    <tr>
+                        <td id="data3">00/00/ - 00/00</td>
+                        <td id="poniedzialek3"></td>
+                        <td></td>
+                        <td id="wtorek3"></td>
+                        <td></td>
+                        <td id="sroda3"></td>
+                        <td></td>
+                        <td id="czwartek3"></td>
+                        <td></td>
+                        <td id="piatek3"></td>
+                        <td></td>
+                        <td id="sobota3"></td>
+                        <td></td>
+                        <td id="niedziela3"></td>
+                        <td></td>
+                        <td id="sumaTydzien3"></td>
+                        <td id="sredniaTydzien3"></td>
+                    </tr>
+                    <!-- tydzien 4 -->
+                    <tr>
+                        <td id="data4">00/00/ - 00/00</td>
+                        <td id="poniedzialek4"></td>
+                        <td></td>
+                        <td id="wtorek4"></td>
+                        <td></td>
+                        <td id="sroda4"></td>
+                        <td></td>
+                        <td id="czwartek4"></td>
+                        <td></td>
+                        <td id="piatek4"></td>
+                        <td></td>
+                        <td id="sobota4"></td>
+                        <td></td>
+                        <td id="niedziela4"></td>
+                        <td></td>
+                        <td id="sumaTydzien4"></td>
+                        <td id="sredniaTydzien4"></td>
+                    </tr>
+                    <!-- tydzien 5 -->
+                    <tr>
+                        <td id="data5">00/00/ - 00/00</td>
+                        <td id="poniedzialek5"></td>
+                        <td></td>
+                        <td id="wtorek5"></td>
+                        <td></td>
+                        <td id="sroda5"></td>
+                        <td></td>
+                        <td id="czwartek5"></td>
+                        <td></td>
+                        <td id="piatek5"></td>
+                        <td></td>
+                        <td id="sobota5"></td>
+                        <td></td>
+                        <td id="niedziela5"></td>
+                        <td></td>
+                        <td id="sumaTydzien5"></td>
+                        <td id="sredniaTydzien5"></td>
+                    </tr>
+                    <!-- tydzien 6 -->
+                    <tr>
+                        <td id="data6">00/00/ - 00/00</td>
+                        <td id="poniedzialek6"></td>
+                        <td></td>
+                        <td id="wtorek6"></td>
+                        <td></td>
+                        <td id="sroda6"></td>
+                        <td></td>
+                        <td id="czwartek6"></td>
+                        <td></td>
+                        <td id="piatek6"></td>
+                        <td></td>
+                        <td id="sobota6"></td>
+                        <td></td>
+                        <td id="niedziela6"></td>
+                        <td></td>
+                        <td id="sumaTydzien6"></td>
+                        <td id="sredniaTydzien6"></td>
+                    </tr>
+                    <!-- tydzien 7 -->
+                    <tr>
+                        <td id="data7">00/00/ - 00/00</td>
+                        <td id="poniedzialek7"></td>
+                        <td></td>
+                        <td id="wtorek7"></td>
+                        <td></td>
+                        <td id="sroda7"></td>
+                        <td></td>
+                        <td id="czwartek7"></td>
+                        <td></td>
+                        <td id="piatek7"></td>
+                        <td></td>
+                        <td id="sobota7"></td>
+                        <td></td>
+                        <td id="niedziela7"></td>
+                        <td></td>
+                        <td id="sumaTydzien7"></td>
+                        <td id="sredniaTydzien7"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Prawa moje hehe xD &copy;</p>
+    </footer>
+
+    <script src="js/variablesTygodnie.js"></script>
+    <script src="js/variablesSzw.js"></script>
+    <script src="js/variablesStatsW.js"></script>
+    <script src="js/variablesPlusMinus.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

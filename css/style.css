@@ -1,0 +1,29 @@
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* table */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: .5vw;
+    border: 3px double black;
+    width: 25vw;
+}
+
+tr, th, td {
+    text-align: center;
+}
+
+th, td {
+    padding: .15vw;
+}
